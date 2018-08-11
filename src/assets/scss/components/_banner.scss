@@ -1,0 +1,35 @@
+.banner-block {
+  padding-top: 65px;
+  .banner-inner {
+    margin-top: 65px !important;
+    position: relative;
+    background-color: $white--main; // background-image: url('http://apparatio.com/_Media/depositphotos_4929371_origi_med_hr.jpeg');
+    background-image: url('https://www.clemson.edu/degrees/images/headers/23.jpg');
+    background-size: cover;
+    background-position: center;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(darken($secondary-color, 50%), .8);
+    }
+    .banner__greetings {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      color: $white--main;
+      transform: translateY(10px);
+      .banner__sub-title {
+        transform: translateY(50px);
+      }
+      h1 {
+        overflow: hidden;
+      }
+    }
+  }
+}

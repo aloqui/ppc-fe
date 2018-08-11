@@ -1,0 +1,17 @@
+.about-the-company-block {
+  .about-the-company-inner {
+    // margin-top: 65px !important;
+    background-color: $white;
+    p {
+      color: $primary-color;
+      transition: .18s ease-out;
+      &:hover {
+        // transform: translateX(8px);
+      }
+    }
+  }
+}
+
+.services-block {
+  background-color: $white--main;
+}

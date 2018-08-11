@@ -1,0 +1,206 @@
+.font--bold {
+  font-weight: 700; }
+
+.font--semi-bold, .utility__link--small {
+  font-weight: 500; }
+
+.font--normal {
+  font-weight: 300; }
+
+.font--semi-light {
+  font-weight: 200; }
+
+.font--light {
+  font-weight: 100; }
+
+.height--full {
+  min-height: 100vh; }
+
+.height--quarter {
+  min-height: 75vh; }
+
+.height--half {
+  min-height: 50vh; }
+
+.hover--no-underline:hover, .utility__link--small:hover {
+  text-decoration: none;
+  color: inherit; }
+
+.highlight--primary {
+  color: #FAB535; }
+
+.utility__button, .utility__button--inverted {
+  padding: 12px 28px;
+  background-color: transparent;
+  color: #fcfcfc;
+  border-radius: 30px;
+  border: 2px solid #fcfcfc;
+  font-size: 75%;
+  letter-spacing: 3px;
+  transition: .16s ease-out; }
+  .utility__button:hover, .utility__button--inverted:hover {
+    border: 2px solid transparent;
+    border-bottom: 2px solid #cccccc;
+    transform: translateY(-4px) scale(1.01);
+    background-color: #fcfcfc;
+    color: #193887;
+    border-radius: 3px; }
+
+.utility__button--inverted {
+  padding: 14px 30px;
+  border: 0 solid transparent;
+  background-color: #fcfcfc;
+  background: #396afc;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2948ff, #396afc);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2948ff, #396afc);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fcfcfc; }
+  .utility__button--inverted:hover {
+    border: 0 solid transparent;
+    color: #FFF; }
+
+.utility__link--small {
+  font-size: 13px;
+  padding: 2px 3px 2px 1px;
+  font-family: 'Montserrat', sans-serif; }
+
+.utility__link--small-dark {
+  color: #404043; }
+  .utility__link--small-dark:hover {
+    color: #FAB535;
+    border-bottom: 1px solid #FAB535; }
+
+.animate--build {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 1.9s cubic-bezier(0.4, 0.2, 0, 1); }
+
+.animate--fade-in {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: 2.9s cubic-bezier(0.4, 0.2, 0, 1); }
+
+.content {
+  max-width: 800px; }
+
+img {
+  height: inherit;
+  max-height: 70%; }
+
+body {
+  background-color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+ul,
+h6 {
+  margin: 0; }
+
+ul {
+  list-style-type: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -.0005em !important; }
+
+.about-the-company-block h1,
+.about-the-company-block h2,
+.about-the-company-block h3,
+.about-the-company-block h4,
+.about-the-company-block h5,
+.about-the-company-block h6 {
+  color: #193887; }
+
+p {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 300; }
+  p.small {
+    font-size: 14px;
+    font-weight: 400; }
+
+@media (max-width: 991px) {
+  .text-center {
+    text-align: left !important; }
+  .gallery {
+    margin-top: 40px; } }
+
+@media (max-width: 415px) {
+  .banner-block {
+    padding-top: 0 !important; }
+    .banner-block .banner-inner {
+      min-height: 90vh; } }
+
+.carousel img {
+  width: 100%; }
+
+.header-block {
+  top: 0;
+  height: 65px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #FFF;
+  -webkit-box-shadow: 0px 1px 17px -5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 1px 17px -5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 17px -5px rgba(0, 0, 0, 0.2);
+  z-index: 10; }
+  .header-block ul li a {
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    color: #404043; }
+  .header-block .header__company-name {
+    font-size: 11px !important;
+    color: #193887; }
+
+.banner-block {
+  padding-top: 65px; }
+  .banner-block .banner-inner {
+    margin-top: 65px !important;
+    position: relative;
+    background-color: #fcfcfc;
+    background-image: url("https://www.clemson.edu/degrees/images/headers/23.jpg");
+    background-size: cover;
+    background-position: center; }
+    .banner-block .banner-inner::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(47, 31, 1, 0.8); }
+    .banner-block .banner-inner .banner__greetings {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      color: #fcfcfc;
+      transform: translateY(10px); }
+      .banner-block .banner-inner .banner__greetings .banner__sub-title {
+        transform: translateY(50px); }
+      .banner-block .banner-inner .banner__greetings h1 {
+        overflow: hidden; }
+
+.about-the-company-block .about-the-company-inner {
+  background-color: #FFF; }
+  .about-the-company-block .about-the-company-inner p {
+    color: #193887;
+    transition: .18s ease-out; }
+
+.services-block {
+  background-color: #fcfcfc; }
+
+.test {
+  background-color: #2bbcc1; }
+
+.test-2 {
+  background-color: #3e52c5; }
